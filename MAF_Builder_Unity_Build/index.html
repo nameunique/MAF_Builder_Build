@@ -19,6 +19,7 @@
       <div id="unity-warning"> </div>
     </div>
     <script>
+
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
       var loadingBar = document.querySelector("#unity-loading-bar");
@@ -50,11 +51,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/MAF_Builder_Build.loader.js";
+      var loaderUrl = buildUrl + "/MAF_Builder_Unity_Build.loader.js";
       var config = {
-        dataUrl: buildUrl + "/MAF_Builder_Build.data",
-        frameworkUrl: buildUrl + "/MAF_Builder_Build.framework.js",
-        codeUrl: buildUrl + "/MAF_Builder_Build.wasm",
+        dataUrl: buildUrl + "/MAF_Builder_Unity_Build.data",
+        frameworkUrl: buildUrl + "/MAF_Builder_Unity_Build.framework.js",
+        codeUrl: buildUrl + "/MAF_Builder_Unity_Build.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "MAF_Builder",
@@ -92,7 +93,6 @@
       }
 
       loadingBar.style.display = "block";
-
 
       var unityInstance_curr = null;
       var script = document.createElement("script");
